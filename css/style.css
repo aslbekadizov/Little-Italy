@@ -205,6 +205,12 @@ main p{
 }
 }
 
+@media (max-width: 850px) {
+.header_menu ul{
+    width: 366px;
+}
+}
+
 @media (max-width: 700px){
 .header_slider{
     height: 365px;
@@ -257,6 +263,16 @@ main p{
 }
 }
 
+@media (max-width: 625px) {
+.header_slider h4{
+    left: 10% !important;
+    font-size: 16px;
+}
+.header_slider {
+    height: 280px;
+}
+}
+
 @media (max-width: 400px){
 .header_slider{
     max-width: 400px;
@@ -266,7 +282,7 @@ main p{
     font-size: 14px;
     letter-spacing: 1px;
     top: 66%;
-    left: 16% !important;
+    left: 15% !important;
 }
 .header_logo img{
     width: 140px;
@@ -274,11 +290,14 @@ main p{
 .burger_menu{
     position: fixed;
     background: #141414;
-    width: 215px;
-    height: 266px;
-    padding: 20px;
+    width: 231px;
+    height: 350px;
+    padding: 19px;
     z-index: 2000;
     top: 0;
+    display: block;
+    right: -231px;
+    transition: 1000ms;
 }
 .burger_menu ul li a{
     letter-spacing: 7.2px;
@@ -293,10 +312,6 @@ main p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.burger_menu{
-    right: -215px;
-    transition: 1000ms;
 }
 .section_top{
     padding: 18px;

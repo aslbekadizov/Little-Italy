@@ -3,7 +3,7 @@ let menu = document.querySelector('.burger_icon')
 let burger_menu = document.querySelector('.burger_menu')
 let word = document.querySelector('.header_slider h4')
 let img1 = document.querySelector('.img1')
-let menu_1 = document.querySelectorAll('#menu_1')
+let menu_1 = document.querySelectorAll('.menu')
 let menu_title = document.querySelectorAll('.menu_title')
 
 
@@ -58,66 +58,36 @@ $(function () {
 
 
 // MENU_START
-// console.log(menu_1.length)
-// function event_menu(){
-//     p = 0; p <= menu_title.length; p++
-//     return (event_menu)
-// }
-
-for(j = 1; j < menu_1.length; j++){
-    menu_1[2].addEventListener('click', function (){
-        menu_title[2].style.display = 'block'
+for(let u = 0; u < 8; u++){
+    
+    menu_1[u].addEventListener('click', function(){
+        menu_1[0].style.border = 'none'
+        menu_1[1].style.border = 'none'
+        menu_1[2].style.border = 'none'
+        menu_1[3].style.border = 'none'
+        menu_1[4].style.border = 'none'
+        menu_1[5].style.border = 'none'
+        menu_1[6].style.border = 'none'
+        menu_1[7].style.border = 'none'
+        menu_1[u].style.border = '2px solid #fff'
+        menu_1[u].style.borderRight = 'none'
+        // Border 
+        console.log(menu_title[u])
+        menu_title[0].style.display = 'none'
+        menu_title[1].style.display = 'none'
+        menu_title[2].style.display = 'none'
+        menu_title[3].style.display = 'none'
+        menu_title[4].style.display = 'none'
+        menu_title[5].style.display = 'none'
+        menu_title[6].style.display = 'none'
+        menu_title[7].style.display = 'none'
+        menu_title[u].style.display = 'block'
+        
     })
-    menu_1[3].addEventListener('click', function (){
-        menu_title[3].style.display = 'block'
-    })
-    menu_1[4].addEventListener('click', function (){
-        menu_title[4].style.display = 'block'
-    })
-    menu_1[5].addEventListener('click', function (){
-        menu_title[5].style.display = 'block'
-    })
-    menu_1[6].addEventListener('click', function (){
-        menu_title[6].style.display = 'block'
-    })
-    menu_1[7].addEventListener('click', function (){
-        menu_title[7].style.display = 'block'
-    })
-    menu_1[8].addEventListener('click', function (){
-        menu_title[8].style.display = 'block'
-    })
+    
 }
 // MENU_FINISH
 
 // SLIDER_SECTION_START
-$(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-        items: 4,
-        margin: 10,
-        loop: true,
-        nav: true,
-        autoplay: true,
-        autoplayTimeout: 1000,
-        // autoplayHoverPause: true,
-        responsive: {
-            0:{
-                items: 1,
-                nav: true
-            },
-            400:{
-                items: 3,
-                nav: true
-            },
-            800:{
-                items: 4,
-                nav: true
-            },
-            1200:{
-                items: 6,
-                nav: true
-            }
 
-        }
-    })
-});
 // SLIDER_SECTION_FINISH

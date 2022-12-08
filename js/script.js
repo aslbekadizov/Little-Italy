@@ -5,6 +5,8 @@ let word = document.querySelector('.header_slider h4')
 let img1 = document.querySelector('.img1')
 let menu_1 = document.querySelectorAll('.menu')
 let menu_title = document.querySelectorAll('.menu_title')
+let dish_menu = document.querySelectorAll('.dish_p')
+let dish_title = document.querySelectorAll('.dish_title')
 
 
 // HEADER_SLIDER_START
@@ -59,7 +61,6 @@ $(function () {
 
 // MENU_START
 for(let u = 0; u < 8; u++){
-    
     menu_1[u].addEventListener('click', function(){
         menu_1[0].style.border = 'none'
         menu_1[1].style.border = 'none'
@@ -71,6 +72,7 @@ for(let u = 0; u < 8; u++){
         menu_1[7].style.border = 'none'
         menu_1[u].style.border = '2px solid #fff'
         menu_1[u].style.borderRight = 'none'
+        
         // Border 
         console.log(menu_title[u])
         menu_title[0].style.display = 'none'
@@ -84,10 +86,52 @@ for(let u = 0; u < 8; u++){
         menu_title[u].style.display = 'block'
         
     })
-    
 }
 // MENU_FINISH
 
-// SLIDER_SECTION_START
 
+// MENU2_START
+for(let h = 0; h < 5; h++){
+    dish_menu[h].addEventListener('click', function () {
+        dish_menu[0].style.border = 'none'
+        dish_menu[1].style.border = 'none'
+        dish_menu[2].style.border = 'none'
+        dish_menu[3].style.border = 'none'
+        dish_menu[4].style.border = 'none'
+        dish_menu[h].style.border = '1px solid #69e3f3'
+        dish_menu[h].style.borderRight = 'none'
+        // BORDER
+        dish_title[0].style.display = 'none'
+        dish_title[1].style.display = 'none'
+        dish_title[2].style.display = 'none'
+        dish_title[3].style.display = 'none'
+        dish_title[4].style.display = 'none'
+        dish_title[h].style.display = 'block'
+    })
+}
+// MENU2_FINISH
+
+// SLIDER_SECTION_START
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        items: 3,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2500,
+        responsive: {
+            0:{
+                items: 1,
+            },
+            400:{
+                items: 2,
+            },
+            800:{
+                items: 2,
+            },
+            1200:{
+                items: 3,
+            }
+        }
+    })
+});
 // SLIDER_SECTION_FINISH

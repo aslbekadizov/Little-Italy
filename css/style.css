@@ -448,7 +448,12 @@ main{
 .our_dish_title{
     margin: 0 auto;
 }
-
+.our_dish_menu {
+    width: 93%;
+}
+.our_dish_menu p{
+    text-align: center;
+}
 }
 
 @media (max-width: 750px) {
@@ -531,6 +536,9 @@ main{
 main{
     display: none;
 }
+.dish_text h3{
+    font-size: 42px;
+}
 }
 
 @media (max-width: 500px) {
@@ -545,6 +553,16 @@ main{
 .dish_title img {
     max-width: 228px;
     height: 186px;
+}
+.our_dish_menu p{
+    font-size: 13px;
+    text-align: center;
+}
+.dish_title p{
+    font-size: 15px;
+}
+.our_dish_menu {
+    width: 93%;
 }
 }
 
@@ -616,8 +634,14 @@ main{
     margin-bottom: 12px;
 }
 .menu_2{
-    width: 360px;
+    width: 335px;
 }
-
+.dish_title img {
+    max-width: 195px;
+    height: 159px;
+}
+.dish_text h3 {
+    font-size: 35px;
+}
 }
 /* MEDIA_FINISH */

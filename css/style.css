@@ -237,6 +237,15 @@ main{
     width: 235px;
     cursor: pointer;
 }
+
+.menu p.active {
+    border: 3px solid white;
+    border-right: none;
+}
+.dish_p p.active2{
+    border: 1px solid #69e3f3;
+    border-right: none;
+}
 .menus_title{
     padding: 13px 20px;
     width: 100%;
@@ -282,10 +291,6 @@ main{
     font-weight: 500;
     max-width: 883px;
 }
-.menu:nth-child(1){
-    border: 3px solid #fff;
-    border-right: none;
-}
 /* MAIN_FINISH */
 /* SECTION_START */
 .dish_text{
@@ -320,10 +325,7 @@ main{
     padding: 20px;
     cursor: pointer;
 }
-.dish_p:nth-child(1){
-    border: 1px solid #69e3f3;
-    border-right: none;
-}
+
 .menu_2{
     display: flex;
     margin: 0 auto;
